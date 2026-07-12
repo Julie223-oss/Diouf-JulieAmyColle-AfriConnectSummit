@@ -8,3 +8,108 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-globe-americas"></i> AfriConnect <span>2026</span></a>
+            <button class="navbar-toggler" id="navToggle"><i class="bi bi-list"></i></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="dark-toggle" id="darkModeToggle"><i class="bi bi-moon"></i></button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">Édition 2026</span>
+                <h1 class="hero-title">AfriConnect<br>Summit</h1>
+                <p class="hero-subtitle">Le plus grand rassemblement tech d'Afrique francophone</p>
+                <p class="hero-dates"><i class="bi bi-calendar-event"></i> Dakar, Sénégal · 15-17 Décembre 2026</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">Je m'inscris</a>
+                    <a href="programme.html" class="btn btn-outline">Voir le programme</a>
+                </div>
+                <div class="countdown">
+                    <div class="countdown-item"><span class="countdown-number" id="days">00</span><span class="countdown-label">Jours</span></div>
+                    <div class="countdown-item"><span class="countdown-number" id="hours">00</span><span class="countdown-label">Heures</span></div>
+                    <div class="countdown-item"><span class="countdown-number" id="minutes">00</span><span class="countdown-label">Minutes</span></div>
+                    <div class="countdown-item"><span class="countdown-number" id="seconds">00</span><span class="countdown-label">Secondes</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats section-padding">
+        <div class="container">
+            <h2 class="section-title">L'événement en chiffres</h2>
+            <div class="stats-grid">
+                <div class="stat-card"><span class="counter" data-target="1200">0</span><span>+</span><p>Participants</p></div>
+                <div class="stat-card"><span class="counter" data-target="48">0</span><p>Intervenants</p></div>
+                <div class="stat-card"><span class="counter" data-target="3">0</span><p>Jours</p></div>
+                <div class="stat-card"><span class="counter" data-target="12">0</span><p>Pays</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY ===== -->
+    <section class="why section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Pourquoi participer ?</h2>
+            <div class="why-grid">
+                <div class="why-card"><i class="bi bi-people"></i><h3>Réseautage</h3><p>Rencontrez les meilleurs talents tech africains.</p></div>
+                <div class="why-card"><i class="bi bi-lightbulb"></i><h3>Innovation</h3><p>Découvrez les dernières tendances tech.</p></div>
+                <div class="why-card"><i class="bi bi-graph-up-arrow"></i><h3>Opportunités</h3><p>Accédez à des opportunités uniques.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SPEAKERS ===== -->
+    <section class="speakers section-padding">
+        <div class="container">
+            <h2 class="section-title">Intervenants vedettes</h2>
+            <div class="speakers-grid">
+                <div class="speaker-card"><img src="images/intervenant (4).jpg" alt="Dr. Aminata Diallo"><h4>Dr. Aminata Diallo</h4><p>IA & Data Science</p><span>Sénégal</span></div>
+                <div class="speaker-card"><img src="images/intervenant.jpg" alt="Kofi Mensah"><h4>Kofi Mensah</h4><p>FinTech</p><span>Ghana</span></div>
+                <div class="speaker-card"><img src="images/intervenant (3).jpg" alt="Yasmine Benali"><h4>Yasmine Benali</h4><p>Design & UX</p><span>Maroc</span></div>
+                <div class="speaker-card"><img src="images/intervenant8.jpg" alt="Jean-Pierre Nduwimana"><h4>Jean-Pierre Nduwimana</h4><p>Cloud & DevOps</p><span>Rwanda</span></div>
+            </div>
+            <div class="text-center mt-4"><a href="intervenants.html" class="btn btn-outline">Voir tous les intervenants</a></div>
+        </div>
+    </section>
+
+    <!-- ===== SPONSORS ===== -->
+    <section class="sponsors section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Nos sponsors</h2>
+            <div class="sponsors-grid">
+                <div class="sponsor-card gold"><i class="bi bi-star-fill"></i> Sponsor Or<br><span class="sponsor-example">AfriTalent</span></div>
+                <div class="sponsor-card silver"><i class="bi bi-star-half"></i> Sponsor Argent<br><span class="sponsor-example">Orange Sénégal</span></div>
+                <div class="sponsor-card bronze"><i class="bi bi-star"></i> Sponsor Bronze<br><span class="sponsor-example">Startup 221</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><h4>AfriConnect Summit</h4><p>Le plus grand rassemblement tech d'Afrique francophone.</p><div class="social-links"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-twitter"></i></a><a href="#"><i class="bi bi-linkedin"></i></a><a href="#"><i class="bi bi-instagram"></i></a></div></div>
+                <div class="footer-col"><h4>Liens rapides</h4><ul><li><a href="index.html">Accueil</a></li><li><a href="programme.html">Programme</a></li><li><a href="intervenants.html">Intervenants</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-col"><h4>Contact</h4><p><i class="bi bi-envelope"></i> contact@africonnectsummit.com</p><p><i class="bi bi-telephone"></i> +221 77 555 4003</p><p><i class="bi bi-geo-alt"></i> Dakar, Sénégal</p></div>
+            </div>
+            <div class="footer-bottom"><p>© <span id="currentYear">2026</span> AfriConnect Summit. Tous droits réservés.</p><button id="backToTop" class="btn-back-top"><i class="bi bi-arrow-up"></i></button></div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

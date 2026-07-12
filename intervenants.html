@@ -8,3 +8,63 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-globe-americas"></i> AfriConnect <span>2026</span></a>
+            <button class="navbar-toggler" id="navToggle"><i class="bi bi-list"></i></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html" class="active">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="dark-toggle" id="darkModeToggle"><i class="bi bi-moon"></i></button>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero"><div class="container"><h1>Intervenants</h1><p class="breadcrumb"><a href="index.html">Accueil</a> &gt; Intervenants</p></div></section>
+
+    <!-- ===== FILTRES + INTERVENANTS ===== -->
+    <section class="filters section-padding">
+        <div class="container">
+            <h2 class="section-title">Nos intervenants</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">Tous</button>
+                <button class="filter-btn" data-category="ia">IA & Tech</button>
+                <button class="filter-btn" data-category="business">Business</button>
+                <button class="filter-btn" data-category="design">Design</button>
+                <button class="filter-btn" data-category="data">Data</button>
+            </div>
+            <div class="speakers-grid" id="speakersGrid">
+                <div class="speaker-card" data-category="ia"><img src="images/intervenant (4).jpg" alt="Dr. A. Diallo"><h4>Dr. Aminata Diallo</h4><p>IA & Data Science</p><span>Sénégal</span></div>
+                <div class="speaker-card" data-category="business"><img src="images/intervenant.jpg" alt="Kofi Mensah"><h4>Kofi Mensah</h4><p>FinTech</p><span>Ghana</span></div>
+                <div class="speaker-card" data-category="design"><img src="images/intervenant (3).jpg" alt="Yasmine Benali"><h4>Yasmine Benali</h4><p>Design & UX</p><span>Maroc</span></div>
+                <div class="speaker-card" data-category="data"><img src="images/intervenant8.jpg" alt="J-P. Nduwimana"><h4>Jean-Pierre Nduwimana</h4><p>Cloud & DevOps</p><span>Rwanda</span></div>
+                <div class="speaker-card" data-category="ia"><img src="images/intervenant7.jpg" alt="Fatima Alami"><h4>Fatima Alami</h4><p>Robotique</p><span>Maroc</span></div>
+                <div class="speaker-card" data-category="business"><img src="images/intervenant9.jpg" alt="David Okonkwo"><h4>David Okonkwo</h4><p>Startup</p><span>Nigeria</span></div>
+                <div class="speaker-card" data-category="design"><img src="images/intervenant (5).jpg" alt="Sarah Amani"><h4>Sarah Amani</h4><p>UX Research</p><span>Tanzanie</span></div>
+                <div class="speaker-card" data-category="data"><img src="images/intervenant (2).jpg" alt="Mohamed El Abdi"><h4>Mohamed El Abdi</h4><p>Big Data</p><span>Égypte</span></div>
+                <div class="speaker-card" data-category="ia"><img src="images/intervenant6.jpg" alt="Grace Muthoni"><h4>Grace Muthoni</h4><p>NLP</p><span>Kenya</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><h4>AfriConnect Summit</h4><p>Le plus grand rassemblement tech d'Afrique francophone.</p><div class="social-links"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-twitter"></i></a><a href="#"><i class="bi bi-linkedin"></i></a><a href="#"><i class="bi bi-instagram"></i></a></div></div>
+                <div class="footer-col"><h4>Liens rapides</h4><ul><li><a href="index.html">Accueil</a></li><li><a href="programme.html">Programme</a></li><li><a href="intervenants.html">Intervenants</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-col"><h4>Contact</h4><p><i class="bi bi-envelope"></i> contact@africonnectsummit.com</p><p><i class="bi bi-telephone"></i> +221 77 555 4003</p><p><i class="bi bi-geo-alt"></i> Dakar, Sénégal</p></div>
+            </div>
+            <div class="footer-bottom"><p>© <span id="currentYear">2026</span> AfriConnect Summit. Tous droits réservés.</p><button id="backToTop" class="btn-back-top"><i class="bi bi-arrow-up"></i></button></div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

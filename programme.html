@@ -8,3 +8,82 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-globe-americas"></i> AfriConnect <span>2026</span></a>
+            <button class="navbar-toggler" id="navToggle"><i class="bi bi-list"></i></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html" class="active">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="dark-toggle" id="darkModeToggle"><i class="bi bi-moon"></i></button>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero"><div class="container"><h1>Programme</h1><p class="breadcrumb"><a href="index.html">Accueil</a> &gt; Programme</p></div></section>
+
+    <!-- ===== PROGRAMME ===== -->
+    <section class="program section-padding">
+        <div class="container">
+            <h2 class="section-title">Planning complet</h2>
+            <div class="tabs">
+                <button class="tab-btn active" data-day="1">Jour 1</button>
+                <button class="tab-btn" data-day="2">Jour 2</button>
+                <button class="tab-btn" data-day="3">Jour 3</button>
+            </div>
+            <div class="tab-content active" id="day1">
+                <table><thead><tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr></thead>
+                <tbody><tr><td>09:00</td><td>Ouverture</td><td>Dr. A. Diallo</td><td>Grande Salle</td></tr>
+                <tr><td>10:30</td><td>IA en Afrique</td><td>Dr. A. Diallo</td><td>Salle A</td></tr>
+                <tr><td>14:00</td><td>FinTech</td><td>Kofi Mensah</td><td>Salle B</td></tr>
+                <tr><td>16:00</td><td>Table ronde</td><td>Divers</td><td>Grande Salle</td></tr></tbody></table>
+            </div>
+            <div class="tab-content" id="day2">
+                <table><thead><tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr></thead>
+                <tbody><tr><td>09:00</td><td>Design UX</td><td>Yasmine Benali</td><td>Salle A</td></tr>
+                <tr><td>10:30</td><td>Cloud</td><td>J-P. Nduwimana</td><td>Salle B</td></tr>
+                <tr><td>14:00</td><td>Data Science</td><td>Dr. A. Diallo</td><td>Grande Salle</td></tr></tbody></table>
+            </div>
+            <div class="tab-content" id="day3">
+                <table><thead><tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr></thead>
+                <tbody><tr><td>09:00</td><td>Cybersécurité</td><td>J-P. Nduwimana</td><td>Grande Salle</td></tr>
+                <tr><td>10:30</td><td>Tech durable</td><td>Kofi Mensah</td><td>Salle A</td></tr>
+                <tr><td>14:00</td><td>Pitch startups</td><td>Divers</td><td>Grande Salle</td></tr></tbody></table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== THEMES ===== -->
+    <section class="themes section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Thématiques</h2>
+            <div class="themes-grid">
+                <div class="theme-card"><i class="bi bi-cpu"></i><h3>IA & Tech</h3><p>Intelligence artificielle</p></div>
+                <div class="theme-card"><i class="bi bi-graph-up-arrow"></i><h3>Business</h3><p>Entrepreneuriat</p></div>
+                <div class="theme-card"><i class="bi bi-palette"></i><h3>Design</h3><p>UX/UI</p></div>
+                <div class="theme-card"><i class="bi bi-database"></i><h3>Data</h3><p>Data science</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><h4>AfriConnect Summit</h4><p>Le plus grand rassemblement tech d'Afrique francophone.</p><div class="social-links"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-twitter"></i></a><a href="#"><i class="bi bi-linkedin"></i></a><a href="#"><i class="bi bi-instagram"></i></a></div></div>
+                <div class="footer-col"><h4>Liens rapides</h4><ul><li><a href="index.html">Accueil</a></li><li><a href="programme.html">Programme</a></li><li><a href="intervenants.html">Intervenants</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-col"><h4>Contact</h4><p><i class="bi bi-envelope"></i> contact@africonnectsummit.com</p><p><i class="bi bi-telephone"></i> +221 77 555 4003</p><p><i class="bi bi-geo-alt"></i> Dakar, Sénégal</p></div>
+            </div>
+            <div class="footer-bottom"><p>© <span id="currentYear">2026</span> AfriConnect Summit. Tous droits réservés.</p><button id="backToTop" class="btn-back-top"><i class="bi bi-arrow-up"></i></button></div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

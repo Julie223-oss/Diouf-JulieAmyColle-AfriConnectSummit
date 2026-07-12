@@ -3,8 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriConnect Summit 2026</title>
+    <title>Contact - AfriConnect Summit 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-globe-americas"></i> AfriConnect <span>2026</span></a>
+            <button class="navbar-toggler" id="navToggle"><i class="bi bi-list"></i></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="dark-toggle" id="darkModeToggle"><i class="bi bi-moon"></i></button>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero"><div class="container"><h1>Inscription & Contact</h1><p class="breadcrumb"><a href="index.html">Accueil</a> &gt; Contact</p></div></section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h2>Formulaire d'inscription</h2>
+                    <form id="contactForm">
+                        <div class="form-group"><label for="nom">Nom complet *</label><input type="text" id="nom" placeholder="Votre nom" required><span class="error-message" id="nomError"></span></div>
+                        <div class="form-group"><label for="email">Email *</label><input type="email" id="email" placeholder="exemple@email.com" required><span class="error-message" id="emailError"></span></div>
+                        <div class="form-group"><label for="telephone">Téléphone *</label><input type="tel" id="telephone" placeholder="77 555 4003" required><span class="error-message" id="telephoneError"></span></div>
+                        <div class="form-group"><label for="participant">Type *</label><select id="participant" required><option value="">Choisissez...</option><option value="participant">Participant</option><option value="speaker">Intervenant</option><option value="sponsor">Sponsor</option></select><span class="error-message" id="participantError"></span></div>
+                        <div class="form-group"><label for="pays">Pays *</label><select id="pays" required><option value="">Choisissez...</option><option value="senegal">Sénégal</option><option value="maroc">Maroc</option><option value="ghana">Ghana</option><option value="nigeria">Nigeria</option><option value="kenya">Kenya</option></select><span class="error-message" id="paysError"></span></div>
+                        <div class="form-group"><label for="message">Message *</label><textarea id="message" rows="4" placeholder="Votre message..." required></textarea><span class="error-message" id="messageError"></span></div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                        <div id="successMessage" style="display:none;"></div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Informations</h3>
+                    <p><i class="bi bi-geo-alt"></i> Dakar, Sénégal</p>
+                    <p><i class="bi bi-calendar-event"></i> 15-17 Décembre 2026</p>
+                    <p><i class="bi bi-envelope"></i> contact@africonnectsummit.com</p>
+                    <p><i class="bi bi-telephone"></i> +221 77 555 4003</p>
+                    <h3>FAQ</h3>
+                    <div class="accordion"><input type="checkbox" id="faq1"><label for="faq1">L'événement est-il gratuit ?</label><div class="accordion-content"><p>Oui, l'entrée est gratuite sur inscription.</p></div></div>
+                    <div class="accordion"><input type="checkbox" id="faq2"><label for="faq2">Sessions en anglais ?</label><div class="accordion-content"><p>Oui, avec traduction simultanée.</p></div></div>
+                    <div class="accordion"><input type="checkbox" id="faq3"><label for="faq3">Présenter un projet ?</label><div class="accordion-content"><p>Oui, espace dédié aux pitches.</p></div></div>
+                    <div class="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.852212486645!2d-17.447186!3d14.693724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDQxJzM3LjQiTiAxN8KwMjYnNDkuNyJX!5e0!3m2!1sfr!2ssn!4v1234567890" width="100%" height="200" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><h4>AfriConnect Summit</h4><p>Le plus grand rassemblement tech d'Afrique francophone.</p><div class="social-links"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-twitter"></i></a><a href="#"><i class="bi bi-linkedin"></i></a><a href="#"><i class="bi bi-instagram"></i></a></div></div>
+                <div class="footer-col"><h4>Liens rapides</h4><ul><li><a href="index.html">Accueil</a></li><li><a href="programme.html">Programme</a></li><li><a href="intervenants.html">Intervenants</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-col"><h4>Contact</h4><p><i class="bi bi-envelope"></i> contact@africonnectsummit.com</p><p><i class="bi bi-telephone"></i> +221 77 555 4003</p><p><i class="bi bi-geo-alt"></i> Dakar, Sénégal</p></div>
+            </div>
+            <div class="footer-bottom"><p>© <span id="currentYear">2026</span> AfriConnect Summit. Tous droits réservés.</p><button id="backToTop" class="btn-back-top"><i class="bi bi-arrow-up"></i></button></div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
